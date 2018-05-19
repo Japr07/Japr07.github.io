@@ -95,6 +95,5 @@ function HiddenPower() {
             break;
         default:
             break;
-    }
-
+    };
 };

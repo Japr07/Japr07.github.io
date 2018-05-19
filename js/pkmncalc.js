@@ -4803,7 +4803,7 @@ function pkmncalc() {
             break;
         case "Klang":
             ps = 60;
-            atk = 55;
+            atk = 80;
             def = 95;
             atksp = 70;
             defsp = 85;

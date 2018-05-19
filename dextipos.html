@@ -11,11 +11,12 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="libs/semantic.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/tipos.js"></script>
 
 </head>
 
 <body>
-    <div class="ui pointing menu">
+    <div class="ui stackable pointing menu">
         <a href="index.html" class="item">
             Principal
         </a>
@@ -36,23 +37,188 @@
         <div id="titulob"></div>
         <br>
         <br>
-        <h1 id="seg-principal-titulo" class="ui header blue dividing">En Construccion</h1>
-        <br>
-        <br>
-        <div class="ui card" id="pokedex">
+        <div class="ui card" id="campos">
             <div class="content">
-                <div class="header">Dex Tipos.</div>
+                <div class="header">Dex de Tipos</div>
+                <div id="cabecera">
+                    <h1 id="seg-principal-titulo" class="ui header red dividing">En Construccion</h1>
+                </div>
+                <br>
+                <br>
+                <div class="ui small feed">
+                    <div class="ui stackable five column grid">
+                        <div class="five wide column">
+                            <h2 id="seg-principal-titulo" class="ui header blue dividing">Tipos</h2>
+                            <br>
+                            <div class="ui labeled input">
+                                <div class="ui label text-input-label-0">
+                                    Tipo Primario
+                                </div>
+                                <div class="ui fluid search selection dropdown text-input-tipo">
+                                    <input type="hidden" name="pokemon" id="tiposelect1">
+                                    <i class="dropdown icon"></i>
+                                    <div class="default text">Tipo Primario</div>
+                                    <div class="menu">
+                                        <div class="item" data-value="Bug">
+                                            Bug
+                                        </div>
+                                        <div class="item" data-value="Dark">
+                                            Dark
+                                        </div>
+                                        <div class="item" data-value="Dragon">
+                                            Dragon
+                                        </div>
+                                        <div class="item" data-value="Electric">
+                                            Electric
+                                        </div>
+                                        <div class="item" data-value="Fairy">
+                                            Fairy
+                                        </div>
+                                        <div class="item" data-value="Fighting">
+                                            Fighting
+                                        </div>
+                                        <div class="item" data-value="Fire">
+                                            Fire
+                                        </div>
+                                        <div class="item" data-value="Flying">
+                                            Flying
+                                        </div>
+                                        <div class="item" data-value="Ghost">
+                                            Ghost
+                                        </div>
+                                        <div class="item" data-value="Grass">
+                                            Grass
+                                        </div>
+                                        <div class="item" data-value="Ground">
+                                            Ground
+                                        </div>
+                                        <div class="item" data-value="Ice">
+                                            Ice
+                                        </div>
+                                        <div class="item" data-value="Normal">
+                                            Normal
+                                        </div>
+                                        <div class="item" data-value="Psychic">
+                                            Psychic
+                                        </div>
+                                        <div class="item" data-value="Poison">
+                                            Poison
+                                        </div>
+                                        <div class="item" data-value="Rock">
+                                            Rock
+                                        </div>
+                                        <div class="item" data-value="Steel">
+                                            Steel
+                                        </div>
+                                        <div class="item" data-value="Water">
+                                            Water
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <!--
+                            <div class="ui labeled input">
+                                <div class="ui label text-input-label-0">
+                                    Tipo Secundario
+                                </div>
+                                <div class="ui fluid search selection dropdown text-input-tipo">
+                                    <input type="hidden" name="pokemon" id="tiposelect2">
+                                    <i class="dropdown icon"></i>
+                                    <div class="default text">Tipo Secundario</div>
+                                    <div class="menu">
+                                        <div class="item" data-value="Bug">
+                                            Bug
+                                        </div>
+                                        <div class="item" data-value="Dark">
+                                            Dark
+                                        </div>
+                                        <div class="item" data-value="Dragon">
+                                            Dragon
+                                        </div>
+                                        <div class="item" data-value="Electric">
+                                            Electric
+                                        </div>
+                                        <div class="item" data-value="Fairy">
+                                            Fairy
+                                        </div>
+                                        <div class="item" data-value="Fighting">
+                                            Fighting
+                                        </div>
+                                        <div class="item" data-value="Fire">
+                                            Fire
+                                        </div>
+                                        <div class="item" data-value="Flying">
+                                            Flying
+                                        </div>
+                                        <div class="item" data-value="Ghost">
+                                            Ghost
+                                        </div>
+                                        <div class="item" data-value="Grass">
+                                            Grass
+                                        </div>
+                                        <div class="item" data-value="Ground">
+                                            Ground
+                                        </div>
+                                        <div class="item" data-value="Ice">
+                                            Ice
+                                        </div>
+                                        <div class="item" data-value="Normal">
+                                            Normal
+                                        </div>
+                                        <div class="item" data-value="Phychic">
+                                            Phychic
+                                        </div>
+                                        <div class="item" data-value="Poison">
+                                            Poison
+                                        </div>
+                                        <div class="item" data-value="Rock">
+                                            Rock
+                                        </div>
+                                        <div class="item" data-value="Steel">
+                                            Steel
+                                        </div>
+                                        <div class="item" data-value="Water">
+                                            Water
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+-->
+                        </div>
+                        <div class="five wide column">
+                            <h2 id="seg-principal-titulo" class="ui header blue dividing">Recibe Daño:</h2>
+                            <br>
+                            <div id="resultado1">
+                                <h3 class="ui header blue">Seleccione un tipo primario y/o
+                                    <br>secundario para ver resultados.</h3>
+                            </div>
+                        </div>
+                        <div class="five wide column">
+                            <h2 id="seg-principal-titulo" class="ui header blue dividing">Hace Daño:</h2>
+                            <br>
+                            <div id="resultado2">
+                                <h3 class="ui header blue">Seleccione un tipo primario y/o
+                                    <br>secundario para ver resultados.</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="ui primary button" id="Aceptar">
+                    Aceptar
+                </button>                
             </div>
         </div>
-    </div>
-    </div>
+        <br>
 </body>
 <footer>
     <br>
     <br>
     <div class="ui label" id="footer">
-            <i class="copyright outline icon"></i>Design By: Japr07
+        <i class="copyright outline icon"></i>Design By: Japr07
     </div>
 </footer>
-
+<br>
+</div>
 </html>

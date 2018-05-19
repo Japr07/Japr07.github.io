@@ -1,4 +1,3 @@
-var pokeselect;
 var ps;
 var atk;
 var def;
@@ -25,8 +24,6 @@ var ivdefsp;
 var ivvel;
 var nivel;
 var notanatu;
-
-console.log("Design By: Japr07");
 $(document).ready(function () {
     //prevenir que el usuario marque un numero mayor o menor al permitido
     $('.nvlpkmn').on('keyup keydown', function (e) {
