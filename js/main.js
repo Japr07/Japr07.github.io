@@ -5,11 +5,15 @@ $(function () {
 $(document).ready(function () {
   console.log("Design By: Japr07");
   //cambiar la version del titulo de las paginas
-  var version = "0.10";
+  var version = "0.11";
   var npagina = location.href.split("/").slice(-1);
   tituloc = document.getElementById("tituloc");
   titulob = document.getElementById("titulob");
   switch (npagina[0]) {
+    case "":
+      tituloc.innerHTML = "<title>PokeHelp v" + version + "</title>";
+      titulob.innerHTML = "<h2 id='seg-principal-titulo' class='ui header green dividing'>Bienvenidos al PokeHelp v" + version;
+      break;
     case "index.html":
       tituloc.innerHTML = "<title>PokeHelp v" + version + "</title>";
       titulob.innerHTML = "<h2 id='seg-principal-titulo' class='ui header green dividing'>Bienvenidos al PokeHelp v" + version;
