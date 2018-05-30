@@ -5249,11 +5249,110 @@ function pkmncalc() {
             defsp = 95;
             vel = 99;
             break;
-
-
-
-
-
+        case "Chespin":
+            ps = 56;
+            atk = 61;
+            def = 65;
+            atksp = 48;
+            defsp = 45;
+            vel = 38;
+            break;
+        case "Quilladin":
+            ps = 61;
+            atk = 78;
+            def = 95;
+            atksp = 56;
+            defsp = 58;
+            vel = 57;
+            break;
+        case "Chesnaught":
+            ps = 88;
+            atk = 107;
+            def = 122;
+            atksp = 74;
+            defsp = 75;
+            vel = 64;
+            break;
+        case "Fennekin":
+            ps = 40;
+            atk = 45;
+            def = 40;
+            atksp = 62;
+            defsp = 60;
+            vel = 60;
+            break;
+        case "Braixen":
+            ps = 59;
+            atk = 59;
+            def = 58;
+            atksp = 90;
+            defsp = 70;
+            vel = 73;
+            break;
+        case "Delphox":
+            ps = 75;
+            atk = 69;
+            def = 72;
+            atksp = 114;
+            defsp = 100;
+            vel = 104;
+            break;
+        case "Froakie":
+            ps = 41;
+            atk = 56;
+            def = 40;
+            atksp = 62;
+            defsp = 44;
+            vel = 71;
+            break;
+        case "Frogadier":
+            ps = 54;
+            atk = 63;
+            def = 52;
+            atksp = 83;
+            defsp = 56;
+            vel = 97;
+            break;
+        case "Greninja":
+            ps = 72;
+            atk = 95;
+            def = 67;
+            atksp = 103;
+            defsp = 71;
+            vel = 122;
+            break;
+        case "Bunnelby":
+            ps = 38;
+            atk = 36;
+            def = 38;
+            atksp = 32;
+            defsp = 36;
+            vel = 57;
+            break;
+        case "Diggersby":
+            ps = 85;
+            atk = 56;
+            def = 77;
+            atksp = 50;
+            defsp = 77;
+            vel = 78;
+            break;
+        case "Fletchling":
+            ps = 45;
+            atk = 50;
+            def = 43;
+            atksp = 40;
+            defsp = 38;
+            vel = 62;
+            break;
+        case "Fletchinder":
+            ps = 62;
+            atk = 73;
+            def = 55;
+            atksp = 56;
+            defsp = 52;
+            vel = 84;
+            break;
         case "Talonflame":
             ps = 78;
             atk = 81;
@@ -5261,6 +5360,118 @@ function pkmncalc() {
             atksp = 74;
             defsp = 69;
             vel = 126;
+            break;
+        case "Scatterbug":
+            ps = 38;
+            atk = 35;
+            def = 40;
+            atksp = 27;
+            defsp = 25;
+            vel = 35;
+            break;
+        case "Spewpa":
+            ps = 45;
+            atk = 22;
+            def = 60;
+            atksp = 27;
+            defsp = 30;
+            vel = 29;
+            break;
+        case "Vivillon":
+            ps = 80;
+            atk = 52;
+            def = 50;
+            atksp = 90;
+            defsp = 50;
+            vel = 89;
+            break;
+        case "Litleo":
+            ps = 62;
+            atk = 50;
+            def = 58;
+            atksp = 73;
+            defsp = 54;
+            vel = 72;
+            break;
+        case "Pyroar":
+            ps = 86;
+            atk = 68;
+            def = 72;
+            atksp = 109;
+            defsp = 66;
+            vel = 106;
+            break;
+        case "Flabébé":
+            ps = 44;
+            atk = 38;
+            def = 39;
+            atksp = 61;
+            defsp = 79;
+            vel = 42;
+            break;
+        case "Floette":
+            ps = 54;
+            atk = 45;
+            def = 47;
+            atksp = 75;
+            defsp = 98;
+            vel = 52;
+            break;
+        case "Florges":
+            ps = 78;
+            atk = 65;
+            def = 68;
+            atksp = 112;
+            defsp = 154;
+            vel = 75;
+            break;
+        case "Skiddo":
+            ps = 66;
+            atk = 65;
+            def = 48;
+            atksp = 62;
+            defsp = 57;
+            vel = 52;
+            break;
+        case "Gogoat":
+            ps = 123;
+            atk = 100;
+            def = 62;
+            atksp = 97;
+            defsp = 81;
+            vel = 68;
+            break;
+        case "Pancham":
+            ps = 67;
+            atk = 82;
+            def = 62;
+            atksp = 46;
+            defsp = 48;
+            vel = 43;
+            break;
+        case "Pangoro":
+            ps = 95;
+            atk = 124;
+            def = 78;
+            atksp = 69;
+            defsp = 71;
+            vel = 58;
+            break;
+        case "Furfrou":
+            ps = 75;
+            atk = 80;
+            def = 60;
+            atksp = 65;
+            defsp = 90;
+            vel = 102;
+            break;
+        case "Espurr":
+            ps = 62;
+            atk = 48;
+            def = 54;
+            atksp = 63;
+            defsp = 60;
+            vel = 68;
             break;
         case "Meowstic":
             ps = 74;
@@ -5270,6 +5481,78 @@ function pkmncalc() {
             defsp = 81;
             vel = 104;
             break;
+        case "Honedge":
+            ps = 45;
+            atk = 80;
+            def = 100;
+            atksp = 35;
+            defsp = 37;
+            vel = 28;
+            break;
+        case "Doublade":
+            ps = 59;
+            atk = 110;
+            def = 150;
+            atksp = 45;
+            defsp = 49;
+            vel = 35;
+            break;
+        case "Aegislash (S)":
+            ps = 60;
+            atk = 50;
+            def = 150;
+            atksp = 50;
+            defsp = 150;
+            vel = 60;
+            break;
+        case "Aegislash (B)":
+            ps = 60;
+            atk = 150;
+            def = 50;
+            atksp = 150;
+            defsp = 50;
+            vel = 60;
+            break;
+        case "Spritzee":
+            ps = 78;
+            atk = 52;
+            def = 60;
+            atksp = 63;
+            defsp = 65;
+            vel = 23;
+            break;
+        case "Aromatisse":
+            ps = 101;
+            atk = 72;
+            def = 72;
+            atksp = 99;
+            defsp = 89;
+            vel = 29;
+            break;
+        case "Swirlix":
+            ps = 62;
+            atk = 48;
+            def = 66;
+            atksp = 59;
+            defsp = 57;
+            vel = 49;
+            break;
+        case "Slurpuff":
+            ps = 82;
+            atk = 80;
+            def = 86;
+            atksp = 85;
+            defsp = 75;
+            vel = 72;
+            break;
+        case "Inkay":
+            ps = 53;
+            atk = 54;
+            def = 53;
+            atksp = 37;
+            defsp = 46;
+            vel = 45;
+            break;
         case "Malamar":
             ps = 86;
             atk = 92;
@@ -5277,6 +5560,38 @@ function pkmncalc() {
             atksp = 68;
             defsp = 75;
             vel = 73;
+            break;
+        case "Binacle":
+            ps = 42;
+            atk = 52;
+            def = 67;
+            atksp = 39;
+            defsp = 56;
+            vel = 50;
+            break;
+        case "Barbaracle":
+            ps = 72;
+            atk = 105;
+            def = 115;
+            atksp = 54;
+            defsp = 86;
+            vel = 68;
+            break;
+        case "Skrelp":
+            ps = 50;
+            atk = 60;
+            def = 60;
+            atksp = 60;
+            defsp = 60;
+            vel = 30;
+            break;
+        case "Dragalge":
+            ps = 65;
+            atk = 75;
+            def = 90;
+            atksp = 97;
+            defsp = 123;
+            vel = 44;
             break;
         case "Clauncher":
             ps = 50;
@@ -5294,12 +5609,100 @@ function pkmncalc() {
             defsp = 89;
             vel = 59;
             break;
+        case "Helioptile":
+            ps = 44;
+            atk = 38;
+            def = 33;
+            atksp = 61;
+            defsp = 43;
+            vel = 70;
+            break;
+        case "Heliolisk":
+            ps = 62;
+            atk = 55;
+            def = 52;
+            atksp = 109;
+            defsp = 94;
+            vel = 109;
+            break;
+        case "Tyrunt":
+            ps = 58;
+            atk = 89;
+            def = 77;
+            atksp = 45;
+            defsp = 45;
+            vel = 48;
+            break;
+        case "Tyrantrum":
+            ps = 82;
+            atk = 121;
+            def = 119;
+            atksp = 69;
+            defsp = 59;
+            vel = 71;
+            break;
+        case "Amaura":
+            ps = 77;
+            atk = 59;
+            def = 50;
+            atksp = 67;
+            defsp = 63;
+            vel = 46;
+            break;
+        case "Aurorus":
+            ps = 123;
+            atk = 77;
+            def = 72;
+            atksp = 99;
+            defsp = 92;
+            vel = 58;
+            break;
         case "Sylveon":
             ps = 95;
             atk = 65;
             def = 65;
             atksp = 110;
             defsp = 130;
+            vel = 60;
+            break;
+        case "Hawlucha":
+            ps = 78;
+            atk = 92;
+            def = 75;
+            atksp = 74;
+            defsp = 63;
+            vel = 118;
+            break;
+        case "Dedenne":
+            ps = 67;
+            atk = 58;
+            def = 57;
+            atksp = 81;
+            defsp = 67;
+            vel = 101;
+            break;
+        case "Carbink":
+            ps = 50;
+            atk = 50;
+            def = 150;
+            atksp = 50;
+            defsp = 150;
+            vel = 50;
+            break;
+        case "Goomy":
+            ps = 45;
+            atk = 50;
+            def = 35;
+            atksp = 55;
+            defsp = 75;
+            vel = 40;
+            break;
+        case "Sliggoo":
+            ps = 68;
+            atk = 75;
+            def = 53;
+            atksp = 83;
+            defsp = 113;
             vel = 60;
             break;
         case "Goodra":
@@ -5318,6 +5721,194 @@ function pkmncalc() {
             defsp = 87;
             vel = 75;
             break;
+        case "Phantump":
+            ps = 43;
+            atk = 70;
+            def = 48;
+            atksp = 50;
+            defsp = 60;
+            vel = 38;
+            break;
+        case "Trevenant":
+            ps = 85;
+            atk = 110;
+            def = 76;
+            atksp = 65;
+            defsp = 82;
+            vel = 56;
+            break;
+        case "Pumpkaboo Small":
+            ps = 44;
+            atk = 66;
+            def = 70;
+            atksp = 44;
+            defsp = 55;
+            vel = 56;
+            break;
+        case "Pumpkaboo Average":
+            ps = 49;
+            atk = 66;
+            def = 70;
+            atksp = 44;
+            defsp = 55;
+            vel = 51;
+            break;
+        case "Pumpkaboo Large":
+            ps = 54;
+            atk = 66;
+            def = 70;
+            atksp = 44;
+            defsp = 55;
+            vel = 46;
+            break;
+        case "Pumpkaboo Super":
+            ps = 59;
+            atk = 66;
+            def = 70;
+            atksp = 44;
+            defsp = 55;
+            vel = 41;
+            break;
+        case "Gourgeist Small":
+            ps = 55					;
+            atk = 85;
+            def = 122;
+            atksp = 58;
+            defsp = 75;
+            vel = 99;
+            break;
+        case "Gourgeist Average":
+            ps = 65					;
+            atk = 90;
+            def = 122;
+            atksp = 58;
+            defsp =75 ;
+            vel = 84;
+            break;
+        case "Gourgeist Large":
+            ps = 75						;
+            atk = 95;
+            def = 122;
+            atksp = 58;
+            defsp = 75;
+            vel = 69;
+            break;
+        case "Gourgeist Super":
+            ps = 85					;
+            atk = 100;
+            def =122 ;
+            atksp = 58;
+            defsp = 75;
+            vel = 54;
+            break;
+        case "Bergmite":
+            ps =55					 ;
+            atk = 69;
+            def = 85;
+            atksp = 32;
+            defsp = 35;
+            vel = 28;
+            break;
+        case "Avalugg":
+            ps = 95					;
+            atk = 117;
+            def = 184;
+            atksp = 44;
+            defsp = 46;
+            vel = 28;
+            break;
+        case "Noibat":
+            ps = 40					;
+            atk = 30;
+            def = 35;
+            atksp = 45;
+            defsp = 40;
+            vel = 55;
+            break;
+        case "Noivern":
+            ps = 85					;
+            atk = 70;
+            def = 80;
+            atksp =97 ;
+            defsp = 80;
+            vel = 123;
+            break;
+        case "Xerneas":
+            ps = 126					;
+            atk = 131;
+            def =95 ;
+            atksp = 131;
+            defsp =98 ;
+            vel = 99;
+            break;
+        case "Yveltal":
+            ps = 126					;
+            atk = 131;
+            def = 95;
+            atksp =131 ;
+            defsp =98 ;
+            vel =99 ;
+            break;
+        case "Zygarde 10%":
+            ps = 54					;
+            atk = 100;
+            def = 71;
+            atksp = 61;
+            defsp = 85;
+            vel = 115;
+            break;
+        case "Zygarde 50%":
+            ps = 108					;
+            atk = 100;
+            def = 121;
+            atksp = 81;
+            defsp = 95;
+            vel = 95;
+            break;
+        case "Zygarde Complete":
+            ps = 216					;
+            atk = 100;
+            def = 121;
+            atksp = 91;
+            defsp =95 ;
+            vel = 85;
+            break;
+        case "Diancie":
+            ps = 50					;
+            atk = 100;
+            def =150 ;
+            atksp = 100;
+            defsp = 150;
+            vel = 50;
+            break;
+        case "Hoopa Confined":
+            ps = 80					;
+            atk = 110;
+            def = 60;
+            atksp = 150;
+            defsp =130 ;
+            vel = 70;
+            break;
+        case "Hoopa Unbound":
+            ps = 80					;
+            atk = 160;
+            def = 60;
+            atksp = 170;
+            defsp = 130;
+            vel = 80;
+            break;
+        case "Volcanion":
+            ps =80					 ;
+            atk =110 ;
+            def =120 ;
+            atksp = 130;
+            defsp = 90;
+            vel = 70;
+            break;
+
+
+
+
         default:
             ps = null;
             atk = null;

@@ -1,30 +1,6 @@
-var ps;
-var atk;
-var def;
-var atksp;
-var defsp;
-var fvel;
-var fps;
-var fatk;
-var fdef;
-var fatksp;
-var fdefsp;
-var fvel;
-var evps;
-var evatk;
-var evdef;
-var evatksp;
-var evdefsp;
-var evvel;
-var ivps;
-var ivatk;
-var ivdef;
-var ivatksp;
-var ivdefsp;
-var ivvel;
-var nivel;
-var notanatu;
-$(document).ready(function () {
+var ps,atk,def,atksp,defsp,fvel,fps,fatk,fdef,fatksp,fdefsp,fvel,evps,evatk,evdef,evatksp,evdefsp,evvel,ivps,ivatk,ivdef,ivatksp,ivdefsp,ivvel,nivel,notanatu;
+
+$(document).ready (function () {
     //prevenir que el usuario marque un numero mayor o menor al permitido
     $('.nvlpkmn').on('keyup keydown', function (e) {
         if ($(this).val() > 100 &&
@@ -96,9 +72,7 @@ $(document).ready(function () {
         pkmncalc();
 
         //comprobacion de datos
-        if (pokeselect !== "" && nivel > 0 && !isNaN(ivatk) && !isNaN(ivatksp) && !isNaN(ivdef) &&
-            !isNaN(ivdefsp) && !isNaN(ivps) && !isNaN(ivvel) && !isNaN(evatk) && !isNaN(evatksp) &&
-            !isNaN(evdef) && !isNaN(evdefsp) && !isNaN(evps) && !isNaN(evvel)) {
+        if (pokeselect !== "" && nivel > 0) {
             //Calculos
             if (evatk + evatksp + evdef + evdefsp + evps + evvel <= 510) {
                 fatk = (((ivatk + 2 * atk + (evatk / 4)) * nivel / 100) + 5);

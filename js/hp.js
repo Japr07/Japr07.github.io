@@ -8,7 +8,7 @@ function HiddenPower() {
     var t;
     var tipo;
     var img;
-    img = document.getElementById('hp');
+    img = $("#hp")[0];
     //saber si el resultado es par o impar
     if (sps % 2 == 0) {
         sps = 0
