@@ -1,5 +1,4 @@
-var ps,atk,def,atksp,defsp,fvel,fps,fatk,fdef,fatksp,fdefsp,fvel,evps,evatk,evdef,evatksp,evdefsp,evvel,ivps,ivatk,ivdef,ivatksp,ivdefsp,ivvel,nivel,notanatu;
-
+let ivps,ivatk,ivdef,ivatksp,ivdefsp,ivvel,notanatu;
 $(document).ready (function () {
     //prevenir que el usuario marque un numero mayor o menor al permitido
     $('.nvlpkmn').on('keyup keydown', function (e) {
@@ -53,7 +52,7 @@ $(document).ready (function () {
     //boton aceptar
     $("#Aceptar").click(function () {
         //Nivel del pokemon
-        nivel = parseInt($("#nivel").val());
+        const nivel = parseInt($("#nivel").val());
         //ivs del pokemon
         ivps = parseInt($("#ivps").val());
         ivatk = parseInt($("#ivatk").val());
@@ -62,12 +61,13 @@ $(document).ready (function () {
         ivdefsp = parseInt($("#ivdefsp").val());
         ivvel = parseInt($("#ivvel").val());
         //evs del pokemon
-        evps = parseInt($("#evps").val());
-        evatk = parseInt($("#evatk").val());
-        evdef = parseInt($("#evdef").val());
-        evatksp = parseInt($("#evatksp").val());
-        evdefsp = parseInt($("#evdefsp").val());
-        evvel = parseInt($("#evvel").val());
+        const evps = parseInt($("#evps").val());
+        const evatk = parseInt($("#evatk").val());
+        const evdef = parseInt($("#evdef").val());
+        const evatksp = parseInt($("#evatksp").val());
+        const evdefsp = parseInt($("#evdefsp").val());
+        const evvel = parseInt($("#evvel").val());
+        var notanatu;
         //Pokemon Selecionado
         pkmncalc();
 
@@ -89,7 +89,7 @@ $(document).ready (function () {
             alert("Han faltado datos o ha ingresado un dato invalido, verifique que no haya dejado ningun campo vacio y que ha seleccionado un Pokemon");
         }
         //Natulareza seleccionada
-        naturaleza = $("#naturaleza").val();
+        const naturaleza = $("#naturaleza").val();
         switch (naturaleza) {
             case "Adamant":
                 fatk *= 1.1;

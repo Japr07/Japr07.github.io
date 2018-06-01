@@ -5,10 +5,10 @@ $(function () {
 $(document).ready(function () {
   console.log("Design By: Japr07");
   //cambiar la version del titulo de las paginas
-  var version = "0.11";
-  var npagina = location.href.split("/").slice(-1);
-  tituloc = $("#tituloc")[0];
-  titulob =$("#titulob")[0];
+  const version = "0.12";
+  const npagina = location.href.split("/").slice(-1);
+  const tituloc = $("#tituloc")[0];
+  const titulob = $("#titulob")[0];
   switch (npagina[0]) {
     case "":
       tituloc.innerHTML = `<title>PokeHelp v${version}</title>`;

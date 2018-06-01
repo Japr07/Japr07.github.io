@@ -1,15 +1,13 @@
 function HiddenPower() {
-    var sps = ivps;
-    var satk = ivatk;
-    var sdef = ivdef;
-    var svel = ivvel;
-    var sspatk = ivatksp;
-    var sdefsp = ivdefsp;
-    var t;
-    var tipo;
-    var img;
-    img = $("#hp")[0];
+    let sps = ivps;
+    let satk = ivatk;
+    let sdef = ivdef;
+    let svel = ivvel;
+    let sspatk = ivatksp;
+    let sdefsp = ivdefsp;
+    const img = $("#hp")[0];
     //saber si el resultado es par o impar
+    
     if (sps % 2 == 0) {
         sps = 0
     } else {
@@ -41,9 +39,9 @@ function HiddenPower() {
         sdefsp = 32
     }
 
-    t = sps + satk + sdef + svel + sspatk + sdefsp;
+    const t = sps + satk + sdef + svel + sspatk + sdefsp;
 
-    tipo = Math.floor(t * 15 / 63);
+    const tipo = Math.floor(t * 15 / 63);
     switch (tipo) {
         case 0:
             img.innerHTML = "<img src='img/tipos/s_fighting_en.png'/><br><img src='img/tipos/s_fighting_es.png'/>";

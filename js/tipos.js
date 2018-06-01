@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $("#Aceptar").click(function () {
-        tiposelect1 = $("#tiposelect1").val();
+        const tiposelect1 = $("#tiposelect1").val();
         if (tiposelect1 !== "") {
             switch (tiposelect1) {
                 case "Bug":
