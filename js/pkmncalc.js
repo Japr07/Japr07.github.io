@@ -6656,5 +6656,6 @@ function pkmncalc() {
             atksp = null;
             defsp = null;
             vel = null;
+            break;
     }
 }

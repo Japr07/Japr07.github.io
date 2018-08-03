@@ -9,27 +9,39 @@ $(document).ready(function () {
                     $("#resultado2").text("");
                     $("#cabecera").html('<br><img src="img/tipos/bug_en.png">');
                     //recibe daño
-                    $('#resultado1').append('<h3 id="seg-principal-titulo" class="ui header blue">Debil Contra:</h3><br>');
-                    $('#resultado1').append('<img src="img/tipos/s_flying_en.png">x2 ');
-                    $('#resultado1').append('<img src="img/tipos/s_fire_en.png">x2<br>');
-                    $('#resultado1').append('<img src="img/tipos/s_rock_en.png">x2<br><br>');
-                    $('#resultado1').append('<h3 id="seg-principal-titulo" class="ui header blue">Resistente Contra:</h3><br>');
-                    $('#resultado1').append('<img src="img/tipos/s_fighting_en.png">x1/2 ');
-                    $('#resultado1').append('<img src="img/tipos/s_ground_en.png">x1/2<br>');
-                    $('#resultado1').append('<img src="img/tipos/s_grass_en.png">x1/2<br><br>');
+                    $('#resultado1').append(`
+                    <h3 id="seg-principal-titulo" class="ui header blue">
+                        Debil Contra:
+                    </h3><br>
+                    <img src="img/tipos/s_flying_en.png"><div class='ui label red tipos'>x2</div><br>
+                    <img src="img/tipos/s_fire_en.png"><div class='ui label red tipos'>x2</div><br>
+                    <img src="img/tipos/s_rock_en.png"><div class='ui label red tipos'>x2</div><br><br>
+                    <h3 id="seg-principal-titulo" class="ui header blue">
+                        Resistente Contra:
+                    </h3><br>
+                    <img src="img/tipos/s_fighting_en.png"><div class='ui label green tipos'>x1/2</div><br>
+                    <img src="img/tipos/s_ground_en.png"><div class='ui label green tipos'>x1/2</div><br>
+                    <img src="img/tipos/s_grass_en.png"><div class='ui label green tipos'>x1/2</div><br><br>
+                    `);
                     //hace daño
-                    $('#resultado2').append('<h3 id="seg-principal-titulo" class="ui header blue">Efectivos Contra:</h3><br>');
-                    $('#resultado2').append('<img src="img/tipos/s_grass_en.png">x2 ');
-                    $('#resultado2').append('<img src="img/tipos/s_psychic_en.png">x2<br>');
-                    $('#resultado2').append('<img src="img/tipos/s_dark_en.png">x2<br><br>');
-                    $('#resultado2').append('<h3 id="seg-principal-titulo" class="ui header blue">Poco Efectivos Contra:</h3><br>');
-                    $('#resultado2').append('<img src="img/tipos/s_steel_en.png">x1/2 ');
-                    $('#resultado2').append('<img src="img/tipos/s_ghost_en.png">x1/2<br>');
-                    $('#resultado2').append('<img src="img/tipos/s_fire_en.png">x1/2 ');
-                    $('#resultado2').append('<img src="img/tipos/s_fairy_en.png">x1/2<br>');
-                    $('#resultado2').append('<img src="img/tipos/s_fighting_en.png">x1/2 ');
-                    $('#resultado2').append('<img src="img/tipos/s_poison_en.png">x1/2<br>');
-                    $('#resultado2').append('<img src="img/tipos/s_flying_en.png">x1/2<br><br>');
+                    $('#resultado2').append(`
+                    <h3 id="seg-principal-titulo" class="ui header blue">
+                        Efectivos Contra:
+                    </h3><br>
+                    <img src="img/tipos/s_grass_en.png"><div class='ui label green tipos'>x2</div><br>
+                    <img src="img/tipos/s_psychic_en.png"><div class='ui label green tipos'>x2</div><br>
+                    <img src="img/tipos/s_dark_en.png"><div class='ui label green tipos'>x2</div><br><br>
+                    <h3 id="seg-principal-titulo" class="ui header blue">
+                        Poco Efectivos Contra:
+                    </h3><br>
+                    <img src="img/tipos/s_steel_en.png"><div class='ui label red tipos'>x1/2</div>
+                    <img src="img/tipos/s_ghost_en.png"><div class='ui label red tipos'>x1/2</div><br>
+                    <img src="img/tipos/s_fire_en.png"><div class='ui label red tipos'>x1/2</div> 
+                    <img src="img/tipos/s_fairy_en.png"><div class='ui label red tipos'>x1/2</div><br>
+                    <img src="img/tipos/s_fighting_en.png"><div class='ui label red tipos'>x1/2 </div>
+                    <img src="img/tipos/s_poison_en.png"><div class='ui label red tipos'>x1/2</div><br>
+                    <img src="img/tipos/s_flying_en.png"><div class='ui label red tipos'>x1/2</div><br><br>
+                    `);
                     break;
                 case "Dark":
                     //limpiar el texto
@@ -37,22 +49,34 @@ $(document).ready(function () {
                     $("#resultado2").text("");
                     $("#cabecera").html('<br><img src="img/tipos/dark_en.png">');
                     //recibe daño
-                    $('#resultado1').append('<h3 id="seg-principal-titulo" class="ui header blue">Debil Contra:</h3><br>');
-                    $('#resultado1').append('<img src="img/tipos/s_fighting_en.png">x2 ');
-                    $('#resultado1').append('<img src="img/tipos/s_bug_en.png">x2 <br>');
-                    $('#resultado1').append('<img src="img/tipos/s_fairy_en.png">x2 <br><br>');
-                    $('#resultado1').append('<h3 id="seg-principal-titulo" class="ui header blue">Resistente Contra:</h3><br>');
-                    $('#resultado1').append('<img src="img/tipos/s_ghost_en.png">x1/2 ');
-                    $('#resultado1').append('<img src="img/tipos/s_psychic_en.png">Nulo <br>');
-                    $('#resultado1').append('<img src="img/tipos/s_dark_en.png">x1/2<br><br>');
+                    $('#resultado1').append(`
+                    <h3 id="seg-principal-titulo" class="ui header blue">
+                        Debil Contra:
+                    </h3><br>
+                    <img src="img/tipos/s_fighting_en.png"><div class='ui label red tipos'>x2</div><br>
+                    <img src="img/tipos/s_bug_en.png"><div class='ui label red tipos'>x2</div><br>
+                    <img src="img/tipos/s_fairy_en.png"><div class='ui label red tipos'>x2</div><br><br>
+                    <h3 id="seg-principal-titulo" class="ui header blue">
+                        Resistente Contra:
+                    </h3><br>
+                    <img src="img/tipos/s_ghost_en.png"><div class='ui label green tipos'>x1/2</div><br>
+                    <img src="img/tipos/s_psychic_en.png"><div class='ui label green tipos'>Nulo</div><br>
+                    <img src="img/tipos/s_dark_en.png"><div class='ui label green tipos'>x1/2</div><br><br>
+                    `);
                     //hace daño
-                    $('#resultado2').append('<h3 id="seg-principal-titulo" class="ui header blue">Efectivos Contra:</h3><br>');
-                    $('#resultado2').append('<img src="img/tipos/s_ghost_en.png">x2 ');
-                    $('#resultado2').append('<img src="img/tipos/s_psychic_en.png">x2<br><br><br>');
-                    $('#resultado2').append('<h3 id="seg-principal-titulo" class="ui header blue">Poco Efectivos Contra:</h3><br>');
-                    $('#resultado2').append('<img src="img/tipos/s_fairy_en.png">x1/2 ');
-                    $('#resultado2').append('<img src="img/tipos/s_fighting_en.png">x1/2<br>');
-                    $('#resultado2').append('<img src="img/tipos/s_dark_en.png">x1/2<br><br>');
+                    $('#resultado2').append(`
+                    <h3 id="seg-principal-titulo" class="ui header blue">
+                        Efectivos Contra:
+                    </h3><br>
+                    <img src="img/tipos/s_ghost_en.png"><div class='ui label green tipos'>x2</div><br>
+                    <img src="img/tipos/s_psychic_en.png"><div class='ui label green tipos'>x2</div><br><br><br>
+                    <h3 id="seg-principal-titulo" class="ui header blue">
+                        Poco Efectivos Contra:
+                    </h3><br>
+                    <img src="img/tipos/s_fairy_en.png"><div class='ui label red tipos'>x1/2</div><br>
+                    <img src="img/tipos/s_fighting_en.png"><div class='ui label red tipos'>x1/2</div><br>
+                    <img src="img/tipos/s_dark_en.png"><div class='ui label red tipos'>x1/2</div><br><br>
+                    `);
                     break;
                 case "Dragon":
                     //limpiar el texto

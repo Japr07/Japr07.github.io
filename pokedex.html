@@ -8,13 +8,18 @@
     <div id="tituloc"></div>
     <script src="libs/jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" href="libs/semantic.min.css">
+    <link rel="stylesheet" href="libs/pokesprite/pokesprite.min.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="libs/semantic.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="libs/pokesprite/pokesprite.min.js"></script>
+    <script src="js/pokedex.js"></script>
+    <script src="js/movimientos.js"></script>
 
 </head>
 
 <body>
+    
     <div class="ui stackable pointing menu">
         <a href="index.html" class="item">
             Principal
@@ -39,18 +44,133 @@
         <h1 id="seg-principal-titulo" class="ui header red dividing">En Construccion</h1>
         <br>
         <br>
-        <div class="ui card" id="pokedex">
+        <div class="ui card" id="campos">
             <div class="content">
                 <div class="header">PokeDex.</div>
+                <br>
+                <h3 id="seg-principal-titulo" class="ui header blue">Selecciona un Pokemon:</h3>
+                <br>
+                <div class="ui fluid search selection dropdown cmbPokemon">
+                    <input type="hidden" name="pokemon" id="pokeselect">
+                    <i class="dropdown icon"></i>
+                    <div class="default text">Selecciona Pokemon</div>
+                    <div class="menu">
+                        <div class="item" data-value="Bulbasaur">
+                            <span class="pkmn-img pkspr pkmn-bulbasaur"></span>Bulbasaur
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <button class="ui primary button" id="Aceptar">
+                    Aceptar
+                </button>
+                <div class="ui top attached tabular menu">
+                    <a class="item active" data-tab="Informacion">Informacion</a>
+                    <a class="item" data-tab="Movimientos">Movimientos</a>
+                    <a class="item" data-tab="Miscelaneos">Misceláneo</a>
+                </div>
+                <div class="ui bottom attached tab segment active" data-tab="Informacion">
+                    <div id="informacion">
+                        <h3 class="ui header blue">Seleccione un Pokemon
+                            <br>para ver la informacion.</h3>
+                    </div>
+                </div>
+                <div class="ui bottom attached tab segment" data-tab="Movimientos">
+                    <div class="ui top attached tabular menu">
+                        <a class="item active" data-tab="Por Nivel">Por Nivel</a>
+                        <a class="item" data-tab="MT MO">Por TM/MO</a>
+                        <a class="item" data-tab="Huevo">Por Huevo</a>
+                        <a class="item" data-tab="Tutor">Por Tutor</a>
+                    </div>
+                    <div class="ui bottom attached tab segment active" data-tab="Por Nivel">
+                        <table class="ui celled table blue">
+                            <thead>
+                                <tr>
+                                    <th class="center aligned">Nivel</th>
+                                    <th class="center aligned">Movimiento</th>
+                                    <th class="center aligned">Poder</th>
+                                    <th class="center aligned">Precisión</th>
+                                    <th class="center aligned">PP</th>
+                                    <th class="center aligned">Descripción</th>
+                                    <th class="center aligned">Tipo</th>
+                                    <th class="center aligned">Tipo de Movimiento</th>
+                                </tr>
+                            </thead>
+                            <tbody id="mov-nivel">
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="ui bottom attached tab segment" data-tab="MT MO">
+                        <table class="ui celled blue table">
+                            <thead>
+                                <tr>
+                                    <th class="center aligned">#</th>
+                                    <th class="center aligned">Movimiento</th>
+                                    <th class="center aligned">Poder</th>
+                                    <th class="center aligned">Precisión</th>
+                                    <th class="center aligned">PP</th>
+                                    <th class="center aligned">Descripción</th>
+                                    <th class="center aligned">Tipo</th>
+                                    <th class="center aligned">Tipo de Movimiento</th>
+                                </tr>
+                            </thead>
+                            <tbody id="mov-mt">
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="ui bottom attached tab segment" data-tab="Huevo">
+                        <table class="ui celled blue table">
+                            <thead>
+                                <tr>
+                                    <th class="center aligned">Movimiento</th>
+                                    <th class="center aligned">Poder</th>
+                                    <th class="center aligned">Precisión</th>
+                                    <th class="center aligned">PP</th>
+                                    <th class="center aligned">Descripción</th>
+                                    <th class="center aligned">Tipo</th>
+                                    <th class="center aligned">Tipo de Movimiento</th>
+                                </tr>
+                            </thead>
+                            <tbody id="mov-huevo">
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="ui bottom attached tab segment" data-tab="Tutor">
+                        <table class="ui celled blue table">
+                            <thead>
+                                <tr>
+                                    <th class="center aligned">Movimiento</th>
+                                    <th class="center aligned">Poder</th>
+                                    <th class="center aligned">Precisión</th>
+                                    <th class="center aligned">PP</th>
+                                    <th class="center aligned">Descripción</th>
+                                    <th class="center aligned">Tipo</th>
+                                    <th class="center aligned">Tipo de Movimiento</th>
+                                </tr>
+                            </thead>
+                            <tbody id="mov-tutor">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="ui bottom attached tab segment" data-tab="Miscelaneos">
+                    <div id="miscelaneo">
+                        <h3 class="ui header blue">Seleccione un Pokemon
+                            <br>para ver la informacion.</h3>
+                    </div>
+                </div>
             </div>
+            <br>
         </div>
-    
+        <script type="text/javascript">
+            PkSpr.process_dom();
+        </script>
 </body>
 <footer>
     <br>
     <br>
     <div class="ui label" id="footer">
-            <i class="copyright outline icon"></i>Design By: Japr07
+        <i class="copyright outline icon"></i>Design By: Japr07
     </div>
     <br>
     <br>
@@ -60,4 +180,5 @@
 </footer>
 <br>
 </div>
+
 </html>
