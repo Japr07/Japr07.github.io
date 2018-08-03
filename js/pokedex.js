@@ -230,7 +230,16 @@ $(document).ready(function () {
                     <div class='ui label green'>
                         <i class="info circle icon"></i>
                         Monster
-                    </div>`);
+                    </div>
+                    <br>
+                    <br>
+                    <p class='ui header blue'>
+                        Ciclos de Huevo (Eclosión):
+                    </p>
+                    <p class='ui header blue'>
+                        21 (5.355 Pasos)
+                    </p>
+                    `);
                     $("#sprite-dex").append(`
                     <br>
                     <p class='ui header blue'>
