@@ -1,5 +1,5 @@
-let ivps,ivatk,ivdef,ivatksp,ivdefsp,ivvel,notanatu;
-$(document).ready (function () {
+let ivps, ivatk, ivdef, ivatksp, ivdefsp, ivvel, notanatu;
+$(document).ready(function () {
     //prevenir que el usuario marque un numero mayor o menor al permitido
     $('.nvlpkmn').on('keyup keydown', function (e) {
         if ($(this).val() > 100 &&
@@ -83,10 +83,32 @@ $(document).ready (function () {
                 fps = ((ivps + 2 * ps + (evps / 4)) * nivel / 100) + 10 + nivel;
                 HiddenPower();
             } else {
-                alert("La suma de los EVs no pueden superar los 510");
+                $("#errorMessage").html(`<div class="ui negative message">
+                                <i class="close icon"></i>
+                                <div class="header">
+                                    La suma de los EVs no pueden superar los 510.
+                                </div>
+                            </div>`)
+                $('.message .close')
+                    .on('click', function () {
+                        $(this)
+                            .closest('.message')
+                            .transition('fade');
+                    });
             }
         } else {
-            alert("Han faltado datos o ha ingresado un dato invalido, verifique que no haya dejado ningun campo vacio y que ha seleccionado un Pokemon");
+            $("#errorMessage").html(`<div class="ui negative message">
+                                <i class="close icon"></i>
+                                <div class="header">
+                                    Han faltado datos o ha ingresado un dato invalido, verifique que no haya dejado ningun campo vacio y que ha seleccionado un Pokemon.
+                                </div>
+                            </div>`)
+            $('.message .close')
+                .on('click', function () {
+                    $(this)
+                        .closest('.message')
+                        .transition('fade');
+                });
         }
         //Natulareza seleccionada
         const naturaleza = $("#naturaleza").val();

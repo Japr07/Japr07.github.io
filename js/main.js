@@ -5,7 +5,7 @@ $(function () {
 $(document).ready(function () {
   console.log("Design By: Japr07");
   //cambiar la version del titulo de las paginas
-  const version = "0.13";
+  const version = "0.14";
   const npagina = location.href.split("/").slice(-1);
   const tituloc = $("#tituloc")[0];
   const titulob = $("#titulob")[0];
@@ -38,7 +38,10 @@ $(document).ready(function () {
       break;
   }
   //Activar el semantic UI
-  $('.ui.dropdown').dropdown({action: 'activate'});
+  $('.ui.dropdown').dropdown({
+    action: 'activate'
+  });
   $('#naturaleza').dropdown();
   $('.menu .item').tab();
+  
 });
